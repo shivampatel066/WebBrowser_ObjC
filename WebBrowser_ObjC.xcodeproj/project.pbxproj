@@ -16,6 +16,7 @@
 		404F3D63239385FD003CB291 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 404F3D62239385FD003CB291 /* main.m */; };
 		404F3D6D239385FD003CB291 /* WebBrowser_ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 404F3D6C239385FD003CB291 /* WebBrowser_ObjCTests.m */; };
 		404F3D78239385FD003CB291 /* WebBrowser_ObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 404F3D77239385FD003CB291 /* WebBrowser_ObjCUITests.m */; };
+		404F3D87239399FF003CB291 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404F3D86239399FF003CB291 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		404F3D73239385FD003CB291 /* WebBrowser_ObjCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebBrowser_ObjCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		404F3D77239385FD003CB291 /* WebBrowser_ObjCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebBrowser_ObjCUITests.m; sourceTree = "<group>"; };
 		404F3D79239385FD003CB291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		404F3D86239399FF003CB291 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				404F3D87239399FF003CB291 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +91,7 @@
 				404F3D6B239385FD003CB291 /* WebBrowser_ObjCTests */,
 				404F3D76239385FD003CB291 /* WebBrowser_ObjCUITests */,
 				404F3D4E239385FB003CB291 /* Products */,
+				404F3D85239399FF003CB291 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +139,14 @@
 				404F3D79239385FD003CB291 /* Info.plist */,
 			);
 			path = WebBrowser_ObjCUITests;
+			sourceTree = "<group>";
+		};
+		404F3D85239399FF003CB291 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				404F3D86239399FF003CB291 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

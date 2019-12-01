@@ -7,8 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <WKNavigationDelegate,UISearchBarDelegate>
+
+
+
+@property (weak, nonatomic) IBOutlet WKWebView *webView1;
+
+
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *actInd;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+
+- (IBAction)stop:(id)sender;
+- (IBAction)refresh:(id)sender;
+- (IBAction)back:(id)sender;
+- (IBAction)forward:(id)sender;
+
 
 
 @end
